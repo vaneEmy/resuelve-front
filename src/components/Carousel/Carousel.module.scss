@@ -1,0 +1,32 @@
+.container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .content {
+        height: 100%;
+        display: flex;
+        transition: all 250ms linear;
+        -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
+        scrollbar-width: none;  /* hide scrollbar in Firefox */
+        
+        img {
+            width: 100%;
+        }
+        
+        button {
+            background-color: #171721;
+            border-color: #171721;
+
+            .icon {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* hide scrollbar in webkit browser */
+.content::-webkit-scrollbar, .content::-webkit-scrollbar {
+    display: none;
+}
