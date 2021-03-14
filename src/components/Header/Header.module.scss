@@ -15,25 +15,25 @@
         width: 20%;
     }
 
-    input[type=text] {
-        width: 20%;
-        height: 3em;
-        border-color: transparent;
-        border-bottom: solid 1px $ghibli;
-        padding-left: 3rem;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-        background-image: url(../../assets/images/gray-search-icon.png);
-        background-repeat: no-repeat;
-        background-position: 2% 50%;
-        background-size: 30px;
-
-        &:hover, &:active, &:focus {
-            width: 70%;
-            background-position: 1% 50%;
-            // background-size: 3%;
+    // input[type=text] {
+    //     width: 20%;
+    //     height: 3em;
+    //     border-color: transparent;
+    //     border-bottom: solid 1px $ghibli;
+    //     padding-left: 3rem;
+    //     -webkit-transition: width 0.4s ease-in-out;
+    //     transition: width 0.4s ease-in-out;
+    //     background-image: url(../../assets/images/gray-search-icon.png);
+    //     background-repeat: no-repeat;
+    //     background-position: 2% 50%;
+    //     background-size: 30px;
+    
+    //     &:hover, &:active, &:focus {
+    //         width: 70%;
+    //         background-position: 1% 50%;
+    //         // background-size: 3%;
             
-        }
-    }
+    //     }
+    // }
 }
 
