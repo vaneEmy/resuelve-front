@@ -48,12 +48,19 @@ function App() {
     let suggestions = value.length === 0 ? [] : filmsList.filter(f => f.title.toLowerCase().includes(value))
     setText(value)
     setSuggestions(suggestions)
+    
+    if(value.length === 0){
+      setNewFilmsList(filmsList)
+    }
   }
 
   const suggestionSelected = (value) =>{
     setText(value.title)
     setSuggestions([])
-    // setNewFilmsList()
+
+    const newFilmList = filmsList.filter(item => item.title === value.title)
+    
+    setNewFilmsList(newFilmList)
   }
 
   return (
@@ -67,7 +74,7 @@ function App() {
           <AutoCompleteText items={suggestions} onChangeText={onChangeAutoCompleteText} onSelectSuggestion={suggestionSelected} text={text}/>
         </div>
         <div className={s.films}>
-          <Films films={filmsList} />
+          <Films films={newFilmsList} />
         </div>
       </div>
       <Footer />
