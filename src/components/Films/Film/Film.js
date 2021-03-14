@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPercent, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 import s from './Film.module.scss'
 import filmImage from '../../../assets/images/film.jpg'
@@ -19,7 +19,7 @@ class Film extends Component{
         return(
             <>
             <div key={this.props.filmData.id} className={s.container}>
-                <img src={filmImage} alt="Image of a movie"/>
+                <img src={filmImage} alt="Default movie"/>
                 <div className={s.title}>
                     <h3>{this.props.filmData.title}</h3>
                     <p><FontAwesomeIcon icon={faStar} className={s.rating}/>{this.props.filmData.rt_score}%</p>

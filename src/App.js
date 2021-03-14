@@ -15,7 +15,7 @@ import Films from './components/Films/Films';
 function App() {
 
   const[filmsList, setFilmsList] = useState([])
-  const[allFilms, setAllFilms] = useState([])
+  // const[allFilms, setAllFilms] = useState([])
 
 
   useEffect(() => {
