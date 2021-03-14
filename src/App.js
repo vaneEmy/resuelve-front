@@ -71,7 +71,7 @@ function App() {
       </div>
       <div className={s.content}>
         <div className={s.autoCompleteText}>
-          <AutoCompleteText items={suggestions} onChangeText={onChangeAutoCompleteText} onSelectSuggestion={suggestionSelected} text={text}/>
+          <AutoCompleteText items={suggestions} onChangeText={onChangeAutoCompleteText} onSelectSuggestion={suggestionSelected} text={text} placeholder="Busca una película"/>
         </div>
         <div className={s.films}>
           <Films films={newFilmsList} />

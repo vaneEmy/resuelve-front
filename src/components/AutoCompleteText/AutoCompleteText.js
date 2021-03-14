@@ -7,7 +7,7 @@ class AutoCompleteText extends Component{
     render(){
         return (
             <>
-                <input type="text" value={this.props.text} name="search" placeholder="" onChange={(e) => this.props.onChangeText(e) }/>
+                <input type="text" value={this.props.text} name="search" placeholder={this.props.placeholder} onChange={(e) => this.props.onChangeText(e) }/>
                 {
                     this.props.items.length > 0 &&
                     <ul className={s.ul}>
