@@ -46,7 +46,7 @@ function App() {
       <div>
         <Carousel images={[movie1, movie2, movie3]} />
       </div>
-      <div>
+      <div className="films">
         <Films films={filmsList} />
       </div>
     </div>
