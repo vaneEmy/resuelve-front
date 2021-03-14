@@ -32,7 +32,7 @@ function App() {
               ...film,
             }
           })
-          setAllFilms(filmsData)
+          // setAllFilms(filmsData)
           setFilmsList(filmsData)
         }
       }
