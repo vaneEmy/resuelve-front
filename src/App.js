@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react';
 
-import './App.css';
+import s from './App.module.scss';
 
 import api from './utils/api'
 import Carousel from './components/Carousel/Carousel';
@@ -47,7 +47,7 @@ function App() {
       <div>
         <Carousel images={[movie1, movie2, movie3]} />
       </div>
-      <div className="films">
+      <div className={s.films}>
         <Films films={filmsList} />
       </div>
       <Footer />

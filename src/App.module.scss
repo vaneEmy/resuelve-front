@@ -1,0 +1,28 @@
+@import './sass/variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' sans-serif;
+  background-color: $white;
+  color: $text;
+
+
+  .carousel {
+    margin-top: 1rem;
+  }
+  
+  .films {
+    margin-top: 1em;
+    width: calc(100% - 2em);
+    height: auto;
+    overflow-x: hidden;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+  }
+}
+
