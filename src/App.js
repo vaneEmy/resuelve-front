@@ -5,6 +5,7 @@ import './App.css';
 import api from './utils/api'
 import Carousel from './components/Carousel/Carousel';
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 import movie1 from './assets/images/movie1.jpeg'
 import movie2 from './assets/images/movie2.jpeg'
@@ -49,6 +50,7 @@ function App() {
       <div className="films">
         <Films films={filmsList} />
       </div>
+      <Footer />
     </div>
   );
 }

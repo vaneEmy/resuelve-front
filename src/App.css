@@ -6,6 +6,10 @@ body {
   color: #171721;
 }
 
+.carousel {
+  margin-top: 1rem;
+}
+
 .films {
   margin-top: 1em;
   width: calc(100% - 2em);

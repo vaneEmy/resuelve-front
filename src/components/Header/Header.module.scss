@@ -8,8 +8,7 @@
     box-sizing: border-box;
     justify-content: space-between ;
     align-items: center;
-
-
+    
     .logo {
         width: 20%;
     }
@@ -18,7 +17,9 @@
         width: 20%;
         height: 3em;
         border: 2px solid #ccc;
-        border-radius: 4px;
+        // border-radius: 4px;
+        border-color: transparent;
+        border-bottom: solid #365278 1px;
         padding-left: 3rem;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
@@ -31,6 +32,7 @@
             width: 70%;
             background-position: 1% 50%;
             background-size: 3%;
+            
         }
     }
 }
