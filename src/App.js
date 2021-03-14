@@ -44,40 +44,16 @@ function App() {
   }
 
   const onChangeAutoCompleteText = (e) =>{
-    console.log(e.target.value)
     const value = e.target.value.toLowerCase();
     let suggestions = value.length === 0 ? [] : filmsList.filter(f => f.title.toLowerCase().includes(value))
-
-
-    // if(value.length > 0){
-    //   const regex = new RegExp(`^${value}`, 'i')
-    //   suggestions = filmsList.sort((a, b) =>{
-    //     if(a.title > b.title){
-    //       return -1
-    //     }
-    //     if(b.title > a.title){
-    //       return 1
-    //     }
-    //     return 0;
-    //   }).filter(v => regex.test(v.title))
-    //   console.log("----- SUGGESTIONS -----")
-    //   console.log(suggestions)
-    // }
     setText(value)
     setSuggestions(suggestions)
   }
 
   const suggestionSelected = (value) =>{
-    console.log("--- SELECCIONE UN DATO :d")
-    console.log(value)
     setText(value.title)
     setSuggestions([])
   }
-  // const renderSuggestions = () => {
-  //   if(suggestions.length === 0){
-  //     return null
-  //   }
-  // }
 
   return (
     <div>
