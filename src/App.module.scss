@@ -11,18 +11,25 @@ body {
   .carousel {
     margin-top: 1rem;
   }
-  
-  .films {
-    margin-top: 1em;
-    width: calc(100% - 2em);
-    height: auto;
-    overflow-x: hidden;
-  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em;
+
+  .content{
+    margin-top: .5rem;
+    
+    .autoCompleteText {
+      margin: 0 1em;
+    }
+
+    .films {
+      width: calc(100% - 2em);
+      height: auto;
+      overflow-x: hidden;
+    
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1em;
+    }
   }
 }
 

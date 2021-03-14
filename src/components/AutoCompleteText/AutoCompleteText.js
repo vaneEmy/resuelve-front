@@ -10,7 +10,7 @@ class AutoCompleteText extends Component{
                 <input type="text" value={this.props.text} name="search" placeholder="" onChange={(e) => this.props.onChangeText(e) }/>
                 {
                     this.props.items.length > 0 &&
-                    <ul>
+                    <ul className={s.ul}>
                         { this.props.items.map(item => <li onClick={() => this.props.onSelectSuggestion(item)}>{item.title}</li>) }
                     </ul>
                 }

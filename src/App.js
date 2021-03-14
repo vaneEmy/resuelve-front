@@ -53,6 +53,7 @@ function App() {
   const suggestionSelected = (value) =>{
     setText(value.title)
     setSuggestions([])
+    // setNewFilmsList()
   }
 
   return (
@@ -61,9 +62,13 @@ function App() {
       <div>
         <Carousel images={[movie1, movie2, movie3]} />
       </div>
-      <AutoCompleteText items={suggestions} onChangeText={onChangeAutoCompleteText} onSelectSuggestion={suggestionSelected} text={text}/>
-      <div className={s.films}>
-        <Films films={filmsList} />
+      <div className={s.content}>
+        <div className={s.autoCompleteText}>
+          <AutoCompleteText items={suggestions} onChangeText={onChangeAutoCompleteText} onSelectSuggestion={suggestionSelected} text={text}/>
+        </div>
+        <div className={s.films}>
+          <Films films={filmsList} />
+        </div>
       </div>
       <Footer />
     </div>
