@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .container {
     height: 60vh;
     margin-top: .5rem;
@@ -37,7 +39,7 @@
             }
 
             .icon {
-                color: #cccccc;
+                color: $white3;
             }
         }
     }

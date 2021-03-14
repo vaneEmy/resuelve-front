@@ -1,3 +1,5 @@
+@import '../../../sass/variables';
+
 .container {
 
     @media (min-width: 575.98px) { 
@@ -22,7 +24,7 @@
         margin: 0 1rem;
 
         p{
-            color: #e6b800;
+            color: $rating;
             
             .rating {
                 margin-right: .5rem;
