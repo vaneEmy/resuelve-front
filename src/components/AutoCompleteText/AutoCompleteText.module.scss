@@ -15,7 +15,7 @@ input[type=text] {
     background-size: 30px;
 
     &:hover, &:active, &:focus {
-        width: 70%;
+        width: 95%;
         background-position: 1% 50%;
     }
 }
@@ -34,7 +34,6 @@ input[type=text] {
             background-color: $ghibli;
             color: $white           
         }
-        
     }
 
     &::before{
