@@ -1,5 +1,5 @@
 .container {
-    height: 60vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,13 +16,14 @@
             width: 100%;
             position: absolute;
             left: 0px;
+            height: 65%;
         }
         
         button {
             background-color: transparent;
             border: none;
             position: absolute;
-            top: 45%;
+            top: 33%;
             font-size: 2rem;
             
 
@@ -35,7 +36,7 @@
             }
 
             .icon {
-                color: #fff;
+                color: #cccccc;
             }
         }
     }
