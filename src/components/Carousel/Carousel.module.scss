@@ -1,8 +1,9 @@
 .container {
-    height: 85vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: red;
     
     .content {
         height: 100%;
@@ -16,14 +17,14 @@
             width: 100%;
             position: absolute;
             left: 0px;
-            height: 65%;
+            height: 100%;
         }
         
         button {
             background-color: transparent;
             border: none;
             position: absolute;
-            top: 33%;
+            top: 50%;
             font-size: 2rem;
             
 
