@@ -1,7 +1,7 @@
 import React from 'react'
 
 import s from './Logo.module.scss'
-import ghibilLogo from '../../assets/images/logo.png'
+import ghibilLogo from '../../assets/images/logo-black.png'
 
 const logo = () => (
     <div className={s.logo}>

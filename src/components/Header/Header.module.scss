@@ -19,13 +19,18 @@
         height: 3em;
         border: 2px solid #ccc;
         border-radius: 4px;
-        padding-left: .5rem;
+        padding-left: 3rem;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
-        // background-image: url(assets/images/search-icon.png);
-        
+        background-image: url(../../assets/images/gray-search-icon.png);
+        background-repeat: no-repeat;
+        background-position: 2% 50%;
+        background-size: 9%;
+
         &:hover, &:active, &:focus {
             width: 70%;
+            background-position: 1% 50%;
+            background-size: 3%;
         }
     }
 }
