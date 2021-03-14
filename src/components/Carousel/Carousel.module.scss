@@ -10,14 +10,29 @@
         transition: all 250ms linear;
         -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
         scrollbar-width: none;  /* hide scrollbar in Firefox */
-        
+        position: relative;
+
         img {
             width: 100%;
+            position: absolute;
+            left: 0px;
         }
         
         button {
-            background-color: #171721;
-            border-color: #171721;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 45%;
+            font-size: 2rem;
+            
+
+            &:first-child {
+                left: 0px;
+                
+            }
+            &:last-child {
+                right: 0px;
+            }
 
             .icon {
                 color: #fff;

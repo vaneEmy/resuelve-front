@@ -25,8 +25,8 @@ const Carousel = (props) => {
     return (
         <div className={s.container}>
             <div className={s.content}>
-                <button onClick={() => changePos(pos - 1 )}><FontAwesomeIcon icon={faArrowCircleLeft} className={s.icon}/></button>
                 <img src={images[pos]} />
+                <button onClick={() => changePos(pos - 1 )}><FontAwesomeIcon icon={faArrowCircleLeft} className={s.icon}/></button>
                 <button onClick={() => changePos(pos + 1 )}><FontAwesomeIcon icon={faArrowCircleRight} className={s.icon}/></button>
             </div>
         </div>
