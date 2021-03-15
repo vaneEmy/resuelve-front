@@ -1,7 +1,12 @@
 @import '../../sass/variables';
 
 input[type=text] {
-    width: 20%;
+    width: 50%;
+    
+    @media (min-width: 575.98px) { 
+        width: 20%;
+    }
+    
     height: 3em;
     outline: none;
     border-color: transparent;
