@@ -12,7 +12,10 @@
     align-items: center;
     
     .logo {
-        width: 20%;
+        width: 40%;
+        @media (min-width: 575.98px) { 
+            width: 20%;
+        }
     }
 }
 

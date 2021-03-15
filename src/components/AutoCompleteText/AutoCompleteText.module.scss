@@ -15,8 +15,12 @@ input[type=text] {
     background-size: 30px;
 
     &:hover, &:active, &:focus {
-        width: 95%;
+        width: 88%;
         background-position: 1% 50%;
+
+        @media (min-width: 575.98px) { 
+            width: 95%;
+        }
     }
 }
 

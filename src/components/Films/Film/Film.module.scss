@@ -10,6 +10,7 @@
     margin-bottom: 2em;
     box-shadow: rgba(0, 0, 0, 0.15) 11.95px 9.95px 6.6px;
     border-radius: 25px;
+    height: 45%;
     
     img {
         width: 100%;
@@ -24,7 +25,6 @@
 
         p{
             color: $rating;
-            
             .rating {
                 margin-right: .5rem;
             }

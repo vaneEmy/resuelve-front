@@ -1,11 +1,15 @@
 @import '../../sass/variables';
 
 .container {
-    height: 60vh;
+    height: 35vh;
     margin-top: .5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 575.98px) { 
+        height: 60vh;
+    }
     
     .content {
         height: 100%;
